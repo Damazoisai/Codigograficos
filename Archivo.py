@@ -3,6 +3,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import urllib.request
+from PIL import Image
     
 @st.experimental_memo
 def download_data():
@@ -13,8 +14,11 @@ def download_data():
     return Licenciamiento
 download_data()
 #st.dataframe(download_data())        lee la tabla
+#para leer imagen 
+imagen=Image.read("messi.jpeg")
+st.Image("imagen")
 
    
 #codigo de graficos 
-chart_data = pd.DataFrame(np.random.randn(20, 3),columns=["a", "b", "c"])
-st.bar_chart(chart_data)
+#chart_data = pd.DataFrame(np.random.randn(20, 3),columns=["a", "b", "c"])
+#st.bar_chart(chart_data)
