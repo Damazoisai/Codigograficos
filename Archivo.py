@@ -16,7 +16,7 @@ download_data()
 #st.dataframe(download_data())        lee la tabla
 #para leer imagen 
 image=Image.open("messi.jpeg")
-st.image("image")
+st.image(image)
 
    
 #codigo de graficos 
