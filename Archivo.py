@@ -2,13 +2,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-from streamlit_option_menu import option_menu
 import urllib.request
-import matplotlib.pyplot as plt
-import plotly.express as px
-import folium
-from streamlit_folium import st_folium
-from PIL import Image
 
 #URL del archivo en formato raw
 #url ='https://raw.githubusercontent.com/ximenarojo/prueba/main/Licenciamiento%20Institucional_2.csv'
@@ -18,16 +12,17 @@ from PIL import Image
 
 
     
-    @st.experimental_memo
-    def download_data():
-        url ="https://github.com/Damazoisai/Codigograficos/blob/main/Licenciamiento%20Institucional_7.csv"
-        filename ="Licenciamiento%20Institucional_7.csv"
-        urllib.request.urlretrieve(url,filename)
-        df_LI = pd.read_csv('Licenciamiento%20Institucional_7.csv')
-        return df_LI
-    download_data()
-    st.dataframe(download_data())
-    st.caption('Para mayor información acceder a: https://www.datosabiertos.gob.pe/dataset/sunedu-licenciamiento-institucional')
+@st.experimental_memo
+def download_data():
+    url ="https://github.com/Damazoisai/Codigograficos/blob/main/Licenciamiento%20Institucional_7.csv"
+    filename ="Licenciamiento%20Institucional_7.csv"
+    urllib.request.urlretrieve(url,filename)
+    df_LI = pd.read_csv('Licenciamiento%20Institucional_7.csv')
+return df_LI
+
+download_data()
+st.dataframe(download_data())
+st.caption('Para mayor información acceder a: https://www.datosabiertos.gob.pe/dataset/sunedu-licenciamiento-institucional')
     
 #codigo de graficos 
 chart_data = pd.DataFrame(
