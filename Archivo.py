@@ -11,6 +11,7 @@ def download_data():
     urllib.request.urlretrieve(url,filename)
     Licenciamiento = pd.read_xlxs('Licenciamiento%20Institucional.xlsx')
     return Licenciamiento
+download_data()
    
 #codigo de graficos 
 chart_data = pd.DataFrame(np.random.randn(20, 3),columns=["a", "b", "c"])
