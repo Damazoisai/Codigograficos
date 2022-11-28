@@ -21,7 +21,7 @@ st.image(image)
 
    
 #codigo de graficos 
-chart_data = pd.download_data(np.random.randn(20, 3),columns=["a", "b", "c"])
+chart_data = pd.
 st.bar_chart(chart_data)
 
 
