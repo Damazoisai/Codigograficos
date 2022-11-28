@@ -23,7 +23,7 @@ st.image(image)
    
 #codigo de graficos 
 Licenciamiento = pd.read_csv('Archivo%20para%20subir%20al%20github.csv')
-df_anho_freq = pd.DataFrame(Licenciamiento["NOMBRE"].value_counts())
+df_anho_freq = pd.DataFrame(Licenciamiento["DEPARTAMENTO"].value_counts())
 st.bar_chart(df_anho_freq)
 
 
