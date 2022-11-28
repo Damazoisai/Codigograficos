@@ -19,10 +19,12 @@ st.dataframe(download_data())        #lee la tabla
 image=Image.open("messi.jpeg")
 st.image(image)
 
+
    
 #codigo de graficos 
-chart_data = pd.
-st.bar_chart(chart_data)
+Licenciamiento = pd.read_csv('Archivo%20para%20subir%20al%20github.csv')
+df_anho_freq = pd.DataFrame(Licenciamiento["Cantidad de unuviersidades licenciadas"].value_counts())
+st.bar_chart(df_anho_freq)
 
 
 
