@@ -33,7 +33,7 @@ df_anho_freq = [
     ("Nov 01, 2008", "Market starts again thanks to..."),
     ("Dec 01, 2009", "Small crash for GOOG after..."),
 ]
-annotations_df = pd.DataFrame(df_anho_freq, columns=["NOMBRE", "TIPO_GESTION"])
+annotations_df = pd.DataFrame(Licenciamiento, columns=["NOMBRE", "TIPO_GESTION"])
 annotations_df.date = pd.licenciamiento(annotations_df.date)
 annotations_df["y"] = 10
 
