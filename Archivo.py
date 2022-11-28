@@ -25,6 +25,8 @@ st.markdown("Cantidad de universidades en el peru")
 Licenciamiento = pd.read_csv('Archivo%20para%20subir%20al%20github.csv')
 df_anho_freq = pd.DataFrame(Licenciamiento["DEPARTAMENTO"].value_counts())
 st.bar_chart(df_anho_freq)
+#Mostrar datos de la licenciatura 
+
 
 
 
