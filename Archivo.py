@@ -5,7 +5,8 @@ import numpy as np
 import urllib.request
 from PIL import Image
 
-    
+
+st.markdown("SUNEDU - LICENCIAMIENTO INSTITUCIONAL-")    
 @st.experimental_memo
 def download_data():
     url ="https://raw.githubusercontent.com/Damazoisai/Codigograficos/main/Archivo%20para%20subir%20al%20github.csv"
