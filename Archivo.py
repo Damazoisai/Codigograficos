@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 import urllib.request
 from PIL import Image
+from datetime import datetime
 
 
 st.markdown("SUNEDU - LICENCIAMIENTO INSTITUCIONAL-")    
