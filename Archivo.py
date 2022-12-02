@@ -23,6 +23,9 @@ st.markdown("Cantidad de universidades en el peru")
 Licenciamiento = pd.read_csv('Archivo%20para%20subir%20al%20github.csv')
 df_anho_freq = pd.DataFrame(Licenciamiento["DEPARTAMENTO"].value_counts())
 st.bar_chart(df_anho_freq)
+#Grafico con fechas 
+start_time = st.slider("Ver casos ocurridos en",value=datetime(2020, 1, 1, 9, 30),format="DD/MM/YY - hh:mm")
+st.write("Fecha seleccionada:", start_time)
 
 
 
