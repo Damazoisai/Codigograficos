@@ -27,8 +27,7 @@ st.bar_chart(df_anho_freq)
 #Grafico con fechas 
 start_time = st.slider("Ver universidades segun fecha inicial",value=datetime(2010, 1, 1, 9, 30),format="DD/MM/YY - hh:mm")
 st.write("Fecha seleccionada:", start_time)
-start_time = st.slider("Ver universidades segun fecha final"value=datetime(2010, 1, 1, 9, 30),format="DD/MM/YY - hh:mm")
-st.write("Fecha seleccionada:", start_time)
+
 
 
 
