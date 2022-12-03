@@ -30,7 +30,7 @@ st.write("Fecha seleccionada:", start_time)
 
 #boton de link
 image = Image.open('CBC.jpeg')    
-if st.button(image):
+if st.button("Cayetano"):
     ('https://www.cayetano.edu.pe/cayetano/es/')
 #if st.button("/html/body/div[2]/header/div/div/div[1]/div/a/img"):
    # ('https://www.cayetano.edu.pe/cayetano/es/')
