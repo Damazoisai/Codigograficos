@@ -29,7 +29,8 @@ start_time = st.slider("Ver universidades segun fecha inicial",value=datetime(20
 st.write("Fecha seleccionada:", start_time)
 
 #boton de link 
-st.button('https://www.cayetano.edu.pe/cayetano/es/')
+if st.button("/html/body/div[2]/header/div/div/div[1]/div/a/img"):
+    ('https://www.cayetano.edu.pe/cayetano/es/')
 
 
 
