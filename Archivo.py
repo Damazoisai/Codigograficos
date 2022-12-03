@@ -28,6 +28,8 @@ st.bar_chart(df_anho_freq)
 start_time = st.slider("Ver universidades segun fecha inicial",value=datetime(2000, 1, 1),format="DD/MM/YY")
 st.write("Fecha seleccionada:", start_time)
 
+#boton de link 
+st.button('https://www.cayetano.edu.pe/cayetano/es/')
 
 
 
